@@ -1,11 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Throwable
 %include	/usr/lib/rpm/macros.perl
 Summary:	Throwable - a role for classes that can be thrown
-#Summary(pl.UTF-8):
 Name:		perl-Throwable
 Version:	0.200013
 Release:	1
@@ -34,9 +33,6 @@ two things: saves any previous value for $@ and calls die $self.
 Throwable is implemented with Moo, so you can stick to Moo or use
 Moose, as you prefer.
 
-# %description -l pl.UTF-8
-# TODO
-
 %prep
 %setup -q -n %{pdir}-%{version}
 
@@ -49,7 +45,6 @@ Moose, as you prefer.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -59,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}//*.pm
-%{perl_vendorlib}/StackTrace/
-%{perl_vendorlib}/Throwable/
+%{perl_vendorlib}/*.pm
+%{perl_vendorlib}/StackTrace
+%{perl_vendorlib}/Throwable
 %{_mandir}/man3/*
