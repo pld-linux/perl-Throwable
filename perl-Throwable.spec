@@ -18,8 +18,8 @@ URL:		https://github.com/rjbs/Throwable
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Devel-StackTrace >= 1.32
 BuildRequires:	perl-Class-Method-Modifiers
+BuildRequires:	perl-Devel-StackTrace >= 1.32
 BuildRequires:	perl-Module-Runtime >= 0.002
 BuildRequires:	perl-Moo
 %endif
