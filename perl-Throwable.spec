@@ -34,9 +34,8 @@ two things: saves any previous value for $@ and calls die $self.
 Throwable is implemented with Moo, so you can stick to Moo or use
 Moose, as you prefer.
 
-
-
-# %description -l pl.UTF-8 # TODO
+# %description -l pl.UTF-8
+# TODO
 
 %prep
 %setup -q -n %{pdir}-%{version}
