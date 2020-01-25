@@ -3,7 +3,6 @@
 %bcond_without	tests		# do not perform "make test"
 
 %define		pdir	Throwable
-%include	/usr/lib/rpm/macros.perl
 Summary:	Throwable - a role for classes that can be thrown
 Name:		perl-Throwable
 Version:	0.200013
