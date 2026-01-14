@@ -6,7 +6,7 @@
 Summary:	Throwable - a role for classes that can be thrown
 Name:		perl-Throwable
 Version:	0.200013
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
